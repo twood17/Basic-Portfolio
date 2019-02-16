@@ -1,3 +1,13 @@
+* {
+    margin: 0 auto;
+}
+
+#clear_float::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
 header {
     padding-left: 10%;
     padding-right: 10%;
@@ -32,15 +42,34 @@ a {
 
 section {
     height: 960px;
-    border-style: solid;
-    border-width: 100px;
     clear: both;
+    background: tan;
 }
 
 .test {
     color: #4aaaa5;
     background: white;
-    padding: 10px;   
+    height: 300px;
+    width: 600px;
+    position: relative;
+    top: 80px;
+    border: 7px solid white;
+    overflow: scroll;
+}
+
+p {
+    color: black;
+}
+
+#about_me {
+    font-size: 24px;
+    left: 10px;
+    color: #4aaaa5;
+}
+
+img {
+    float: left;
+    padding-right: 5px;
 }
 
 footer {
